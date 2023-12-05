@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="20sp"
+    tools:context=".RegisterCasesActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20sp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="50sp"
+            android:text="Welcome Home"
+            android:textSize="40sp"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="23sp"
+            android:layout_marginBottom="10sp"
+            android:text="Enter missing person name *"/>
+
+        <EditText
+            android:id="@+id/missingPersonName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:layout_marginLeft="10sp"
+            android:layout_marginBottom="10sp"
+            android:hint="Enter the name"/>
+
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="23sp"
+            android:layout_marginBottom="10sp"
+            android:text="Enter age of missing person *"/>
+
+        <EditText
+            android:id="@+id/missingPersonAge"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:inputType="number"
+            android:layout_marginLeft="10sp"
+            android:layout_marginBottom="10sp"
+            android:hint="Enter the age"/>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="23sp"
+            android:layout_marginBottom="10sp"
+            android:text="Enter the FIR number *"/>
+
+        <EditText
+            android:id="@+id/firNumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:inputType="number"
+            android:layout_marginLeft="10sp"
+            android:layout_marginBottom="10sp"
+            android:hint="Enter fir number"/>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="23sp"
+            android:layout_marginBottom="10sp"
+            android:text="Enter 16 digit Aadhaar number"/>
+
+        <EditText
+            android:id="@+id/aadhaarNumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:inputType="number"
+            android:layout_marginLeft="10sp"
+            android:layout_marginBottom="10sp"
+            android:hint="Enter aadhaar number"/>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="23sp"
+            android:layout_marginBottom="10sp"
+            android:text="Enter your mobile number *"/>
+
+        <EditText
+            android:id="@+id/userPhoneNumber"
+            android:layout_width="match_parent"
+            android:layout_height="60sp"
+            android:textSize="20sp"
+            android:layout_marginLeft="10sp"
+            android:layout_marginBottom="10sp"
+            android:inputType="phone"
+            android:hint="10 digit number"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:layout_marginBottom="10sp"
+            android:text="Enter OTP *"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10sp"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/otpNumber"
+                android:layout_width="150sp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="10sp"
+                android:layout_marginBottom="10sp"
+                android:hint=" 0 0 0 0 0 0"
+                android:inputType="number"
+                android:maxLength="6"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/otpBtn"
+                android:layout_width="135dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="20sp"
+                android:layout_marginBottom="10sp"
+                android:text="Get Otp"
+                android:textSize="19sp" />
+
+        </LinearLayout>
+
+        <!--            <FrameLayout-->
+        <!--                android:layout_width="match_parent"-->
+        <!--                android:layout_height="50sp"-->
+        <!--                android:orientation="vertical">-->
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:textSize="20sp"
+            android:id="@+id/verifyOtp"
+            android:layout_marginBottom="20sp"
+            android:text="Verify OTP"/>
+        <ProgressBar
+            android:id="@+id/progressBarId"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:visibility="gone"/>
+        <!--            </FrameLayout>-->
+
+
+
+        <ImageView
+            android:layout_width="175dp"
+            android:layout_height="175dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="20sp"
+            android:src="@drawable/ic_baseline_image_24"
+            android:id="@+id/imgView"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:id="@+id/selectImg"
+            android:layout_marginLeft="70sp"
+            android:layout_marginBottom="20sp"
+            android:text="Upload image"/>
+
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:id="@+id/submitDetails"
+            android:layout_marginBottom="20sp"
+            android:text="Submit details"/>
+
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:id="@+id/searchImg"
+            android:layout_marginBottom="20sp"
+            android:text="Search image"/>
+
+        <TextView
+            android:id="@+id/secondValue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="40sp"
+            android:layout_marginLeft="10sp"
+            android:layout_marginBottom="10sp" />
+
+
+    </LinearLayout>
+
+</ScrollView>
